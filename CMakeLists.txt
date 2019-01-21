@@ -3,4 +3,5 @@ project(Assignment2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Assignment2 d.cpp)
+add_executable(Assignment2 d.cpp d2.cpp)
+add_executable(Assignemnt2 d2.cpp)

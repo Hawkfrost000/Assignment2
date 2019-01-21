@@ -29,7 +29,8 @@ Graph::Graph(int N, int M) {
 }
 
 void Graph::addEdge(int start, int end) {
-    adj[start-1].push_back(end-1);
+    adj[start-1].push_back(end);
+    cout << "added edge from " << start << " to " << end;
 }
 
 void Graph::printComponents() {
@@ -107,7 +108,6 @@ void Graph::findComponents() {
     }
 
     reverse.printComponents();
-    cout << "test";
 
 }
 
@@ -121,7 +121,7 @@ int main() {
 	for (int x = 0; x < m; x++){
 	    cin >> start >> dest;
 	    g.addEdge(start, dest);
-        cout << "test" << x;
+
 	}
 
 	g.findComponents();
