@@ -63,6 +63,15 @@ void fillOrder(int v, bool visited[], stack<int> &stack, vector<node> graph) {
     stack.push(v);
 }
 
+void invertGraph(vector<node> graph) {
+    vector<node> revGraph;
+
+    for (int x = 0; x < graph.size(); x++) {
+        revGraph.push_back(node(x+1));
+    }
+
+}
+
 void dfs(int v, bool visited[], int iter, vector<node> graph) {
 
     visited[v] = true;
